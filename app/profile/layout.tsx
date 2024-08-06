@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-
-import { Providers } from './providers'
+import Sidebar from "../components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Personal Podcast socila App",
+  title: "Podcast socila App",
   description: "A visually appealing feature rich podcast social network app",
 };
 
@@ -19,9 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>
+        <Sidebar/>
           {children}
-        </Providers>
       </body>
     </html>
   );
