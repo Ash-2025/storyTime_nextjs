@@ -18,14 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <>
           <div className="w-full h-full flex justify-center items-center relative bg-black overflow-y-auto">
             <div className="max-w-screen-lg w-full h-[calc(100vh-5rem)] flex">
-              <Sidebar key={1} />
+              <Sidebar />
               {children}
             </div>
           </div>
-        </>
       </body>
     </html>
   );
